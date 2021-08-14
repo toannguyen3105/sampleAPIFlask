@@ -105,14 +105,16 @@ class UserRegister(Resource):
         steam_id = data["steam_id"]
         phone = data["phone"]
         if UserModel.find_by_username(username):
-            return {"message": "Tài khoản với tên '{}' đã tồn tại.".format(username)}, 400
+            return {
+                       "message": "User '{}' is exists.".format(username)
+                   }, 400
         else:
             user = UserModel(username, generate_password_hash(data["password"]), 0, steam_id, None, None,
                              getCurrentIpUser(), 1, None, None, None, None, phone, None, None, getTimeStamp(), None,
                              None, None)
             user.save_to_db()
 
-            return {"message": "Đăng ký tài khoản '{}' thành công.".format(username)}, 201
+            return {"message": "Register user '{}' is success.".format(username)}, 201
 
 
 class UserUpload(Resource):
