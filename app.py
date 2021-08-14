@@ -1,17 +1,12 @@
 import os
 
-from flask import Flask, jsonify
+from flask import Flask
 from flask_cors import CORS
 from flask_restful import Api
 from flask_jwt_extended import JWTManager
 
 from db import db
-from resources.user import UserRegister, UserLogin, User, UserList, TokenRefresh, UserSteam, UserAddBalance, \
-    UserProfile, UserUpload
-from resources.log import LogList
-from resources.item import ItemList, Item, ItemRegister
-from resources.config import ConfigList, Config, ConfigRegister, ConfigBannerList, ConfigRateItem
-from resources.transaction import Transaction, TransactionList
+from resources.user import UserRegister
 
 __author__ = "@toannguyen3105"
 
