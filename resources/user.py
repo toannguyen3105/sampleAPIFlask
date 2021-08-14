@@ -99,9 +99,13 @@ class UserRegister(Resource):
                         )
 
     def post(self):
-        return {
-                   "message": "Success"
-               }, 200
+        data = self.parser.parse_args()
+
+        username = data["username"]
+        steam_id = data["steam_id"]
+        phone = data["phone"]
+
+        return {"message": "Register user '{}' is success.".format(username)}, 201
 
 
 class UserUpload(Resource):
