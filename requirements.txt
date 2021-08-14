@@ -4,3 +4,5 @@ Flask-SQLAlchemy
 Flask-Cors
 python-decouple
 requests
+validate_email
+py3dns
