@@ -1,6 +1,6 @@
 # Overview
 
-This tutorial covers the basic steps of deploying a Python application onto a public server using `uWSGI` and `nginx`. We will be using a sample project, a Flask REST API, for demonstration, however, the deployment process should remain similar for any other Python applications. Our sample project can be found here: [https://github.com/schoolofcode-me/stores-rest-api](https://github.com/schoolofcode-me/stores-rest-api).
+This tutorial covers the basic steps of deploying a Python application onto a public server using `uWSGI` and `nginx`. We will be using a sample project, a Flask REST API, for demonstration, however, the deployment process should remain similar for any other Python applications. 
 
 In this tutorial, we will not cover how to set up a server on any hosting platforms, however, if you are looking for such a tutorial, you may take a look at this one: [DigitalOcean Tutorial](DigitalOcean%20Tutorial.md), in which you will learn the basics on setting up a server from the beginning on a cloud hosting platform called `DigitalOcean`. The procedure should be similar for setting up server on other platforms as well, such as `AWS` (Amazon Web Service).
 
